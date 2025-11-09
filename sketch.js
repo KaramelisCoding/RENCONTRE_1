@@ -4,7 +4,7 @@ let moff = 2.0;
 let cnv;
 
 function setup() {
-  cnv = createCanvas(windowWidth, windowHeight);
+  cnv = createCanvas(windowWidth, 300);
   cnv.parent('container'); // place le canvas dans la div avec id="container"
   colorMode(HSB, 360, 100, 100, 255);
   fill(0, 80, 50, 200);
