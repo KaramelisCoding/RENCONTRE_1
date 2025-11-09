@@ -33,14 +33,21 @@
        color: #b8b9ae;
     }
 
-    canvas {
-      display: block;
-      margin: 10em auto 0em auto;
-      max-width: 100%;
-      height: 300;
-      border-radius: 10px; /* ← bords arrondis ici */
+    #container {
+  width: 100%;
+  margin: 8em auto 0 auto;
+  border-radius: 12px;     /* coins arrondis visibles des deux côtés */
+  overflow: hidden;        /* rogne le contenu (le canvas) à l'intérieur */
+}
+canvas {
+  display: block;
+  margin: 0em auto 0 auto;
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
   overflow: hidden;
-    }
+}
+
 
     .instructions {
       max-width: 640px;

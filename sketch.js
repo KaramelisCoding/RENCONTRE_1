@@ -4,7 +4,7 @@ let moff = 2.0;
 let cnv;
 
 function setup() {
-  cnv = createCanvas(windowWidth, 300);
+  cnv = createCanvas(windowWidth, windowHeight * 0.3);
   cnv.parent('container'); // place le canvas dans la div avec id="container"
   colorMode(HSB, 360, 100, 100, 255);
   fill(0, 80, 50, 200);
@@ -24,4 +24,8 @@ function draw() {
   moff += 0.01;
   let m = noise(moff) * width;
   line(m, 0, m, height);
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight * 0.2);
 }
